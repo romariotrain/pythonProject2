@@ -13,7 +13,7 @@ def line_names(contacts_list):
         else:
             contact[1] = contact[0][1]
             contact[0] = contact[0][0]
-        if len(contact) > 7:
+        if len(contact) > 7 and contact[-1] == '':
             contact.pop(-1)
 
 
